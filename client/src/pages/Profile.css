@@ -1,0 +1,175 @@
+/*body, html {
+    height: 100%;
+    margin: 0;
+    background: #171718;
+    background: -webkit-linear-gradient(to right, #161616, #424242, #202020);
+    background: linear-gradient(to right, #282929, #2d2d30, #282829);
+    font-family: sans-serif;
+  }*/
+  
+ /* .body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/login_background.jpg'); 
+    background-size: cover;
+    background-position: center;
+  }*/
+  
+  .profile-picture {
+    position: fixed;
+    top: 50px; /* Adjust top position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Ensure the profile picture is on top of the form */
+  }
+  
+  .profile-img {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%; /* Make it circular */
+    border: 2px solid white; /* Optional: add a border */
+  }
+  
+  .form-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 40px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0; /* Lower z-index to ensure it's behind the profile picture */
+  }
+
+  .user-info {
+    text-align: center; /* Center the user information */
+    margin-bottom: 0; /* Add space between profile picture and content */
+    margin-top: 100px;
+  }
+
+  .user-info h1 {
+    font-size: 30px; /* Adjust the font size as needed */
+    color: white;
+  }
+  
+.user-info h3 {
+    margin: 0; /* Reset margins for heading elements */
+    margin-top: 20px;
+    color: white; /* Set text color */
+  }
+  
+  .bio-paragraph {
+    font-family: "Bradley Hand ITC"; /* Change font family */
+    font-size: 16px; /* Change font size */
+    font-weight: bold; /* Optionally change font weight */
+    color: #fff; /* Optionally change font color */
+    text-align: justify;
+  }
+  
+  .interest-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Set display to flex */
+  }
+  
+  .interest-list li {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    margin-right: 10px; /* Add margin to separate items */
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: whitesmoke;
+  }
+  
+  .header h1 {
+    margin-top: 50px; /* Adjust as needed */
+  }
+  
+  .header h3 {
+    margin-top: 20px; /* Adjust as needed */
+    text-align: left;
+  }
+  
+  .username {
+    color: white;
+    font-size: 14px;
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    color: white;
+  }
+
+  .content-segment {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+  }
+  
+  .header {
+    width: 100%; /* Ensure the header spans the full width */
+    text-align: center; /* Center the content horizontally */
+  }
+  
+  .achievements h3{
+    margin-top: 10px; /* Add space between bio and interest sections */
+    text-align: left;
+  }
+  
+  
+  .status,
+  .about,
+  .achievements {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+  }
+  
+  .status h3,
+  .about h3,
+  .achievements h3 {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      grid-template-columns: 1fr; 
+    }
+    .status,
+    .about,
+    .achievements {
+      font-size: smaller; 
+      padding: 10px; 
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .content {
+      grid-template-columns: 1fr;
+    }
+  }
